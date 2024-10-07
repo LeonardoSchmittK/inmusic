@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>InMusic - Página principal</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: url("./img/bg.png");
+            background-size: cover;
+            width: 100%;
+            height:80vh;
+            overflow: hidden;
+            align-items: center;
+            display: flex;
+            justify-content: center;
+            font-family: "Nirmala UI", Arial, serif;
+        }
+
+        main {
+            width: 95%;
+            height: 100%;
+            background:#fff;
+            border-radius: 10px;
+            margin-top: 50px;
+            padding: 2em;
+        }
+
+        main header {
+            display: flex;
+            justify-content: center; /* Center the title */
+            align-items: center;
+            position: relative;
+        }
+
+        main header .user-info {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: row-reverse;
+            gap: 15px;
+            position: absolute;
+            left: 0;
+        }
+
+        main header .title {
+            text-align: center;
+        }
+
+        main header img {
+            border-radius: 100%;
+            width: 35px;
+            height: 35px;
+        }
+
+        aside {
+            width: 250px;
+            height: 95%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            border-right: 1px solid rgba(128, 128, 128, 0.15);
+        }
+
+        aside .logo {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        aside nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        aside nav ul li {
+            margin: 15px 0;
+        }
+
+        aside nav ul li a {
+            color: #000;
+            text-decoration: none;
+            font-size: 18px;
+        }
+
+        aside nav ul li a:hover {
+            color: #ff6347;
+        }
+
+        aside .user-profile {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 30px;
+        }
+
+        aside .user-profile img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+
+        aside .user-profile h5 {
+            font-size: 16px;
+        }
+
+        .horizontal {display: flex;flex-direction: row;height: 90%;overflow: scroll;flex-wrap: wrap; margin: 10px}
+
+
+        .musics {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            margin-left: 20px;
+            margin-top: 20px;
+            gap:15px;
+        }
+        section {
+            height: 100px;
+            width: 100px;
+            min-width: 100px;
+            background: deeppink;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            background: url("https://static.ndmais.com.br/2022/08/alok-2021.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            color:#fff;
+            position: relative;
+
+        }
+
+
+
+        section:hover  .play {
+            font-size: 25px;
+            visibility: visible;
+            transition: 100ms linear;
+        }
+
+        .play {
+            position: absolute;
+            bottom:21px;
+            font-size: 35px;
+            visibility: hidden;
+            transition: 100ms linear;
+            cursor:pointer;
+        }
+
+        article {
+            display: flex;
+            flex-direction:column ;
+        }
+
+        .musics-container {
+            margin-left: 15px;
+        }
+
+    </style>
+</head>
+<body>
+    <main>
+        <header>
+            <div class="title">
+                <h1>InMusic</h1>
+            </div>
+        </header>
+        <div class="horizontal">
+
+        <aside>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Playlists</a></li>
+                    <li><a href="#">Albums</a></li>
+                    <li><a href="#">Artists</a></li>
+                    <li><a href="#">Settings</a></li>
+                </ul>
+            </nav>
+            <div class="user-profile">
+                <img src="https://lh3.googleusercontent.com/a/AGNmyxbprzEiM8S-6cmud4S2ML6-s8gsJCiODzMkiKhtCA=s96-c" alt="user-profile">
+                <h5>Leonardo Schmitt</h5>
+            </div>
+        </aside>
+            <article>
+
+        <div class="musics-container">
+            <h5>Destaques:</h5>
+            <div class="musics">
+
+              <section>
+                  <h4>Dj Alok</h4>
+                  <div class="play">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                  </div>
+              </section>
+            <section>
+                <h4>Dj Alok</h4>
+                <div class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                </div>
+            </section>
+            <section>
+                <h4>Dj Alok</h4>
+                <div class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                </div>
+            </section>
+            <section>
+                <h4>Dj Alok</h4>
+                <div class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                </div>
+            </section>
+            <section>
+                <h4>Dj Alok</h4>
+                <div class="play">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                </div>
+            </section>
+            </div>
+
+        </div>
+            <div class="musics-container">
+                <h5>Destaques:</h5>
+                <div class="musics">
+
+                    <section>
+                        <h4>Dj Alok</h4>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Dj Alok</h4>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Dj Alok</h4>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Dj Alok</h4>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                        </div>
+                    </section>
+                    <section>
+                        <h4>Dj Alok</h4>
+                        <div class="play">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="svg-icon" style="width: 1em; height: 1em;vertical-align: middle;fill: currentColor;overflow: hidden;" viewBox="0 0 1024 1024" version="1.1"><path d="M852.727563 392.447107C956.997809 458.473635 956.941389 565.559517 852.727563 631.55032L281.888889 993.019655C177.618644 1059.046186 93.090909 1016.054114 93.090909 897.137364L93.090909 126.860063C93.090909 7.879206 177.675064-35.013033 281.888889 30.977769L852.727563 392.447107 852.727563 392.447107Z"/></svg>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+
+            </article>
+        </div>
+
+    </main>
+
+    <script>
+        const images = [
+            "https://static.ndmais.com.br/2022/08/alok-2021.png",
+            "https://www.sambanews.com.br/wp-content/uploads/2023/05/PERICLES_859-1024x895.jpg",
+            "https://upload.wikimedia.org/wikipedia/commons/3/32/2009-08-03_-_Homenagem_a_Luiz_Gonzaga_Prefeitura_de_Belo_Horizonte.jpg",
+            "https://d1x4bjge7r9nas.cloudfront.net/wp-content/uploads/2021/09/09151143/anitta.jpg",
+            "https://fly.metroimg.com/upload/q_85,w_700/https://uploads.metroimg.com/wp-content/uploads/2023/11/13154022/capa-679.jpg"
+        ];
+
+        const randomIndex = Math.floor(Math.random() * images.length);
+
+        const sections = document.querySelectorAll('section');
+
+        sections.forEach(section => {
+            const randomIndex = Math.floor(Math.random() * images.length);
+
+            section.style.backgroundImage = `url(${images[randomIndex]})`;
+        });
+    </script>
+</body>
+</html>
